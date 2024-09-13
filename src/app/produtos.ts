@@ -7,6 +7,10 @@ export interface IProduto {
     imagem: string;
 }
 
+export interface IProdutoCarrinho extends IProduto{
+    quantidade: number;
+}
+
 export const produtos: IProduto[] = [
     { id: 1, descricao: "Camiseta 01", preco: 100.00, descricaoPreco: "À vista no PIX", imagem: "./assets/Uniforme01.png", quantidadeEstoque: 10 },
     { id: 3, descricao: "Camisa 02", preco: 200.00, descricaoPreco: "À vista no PIX", imagem: "./assets/Uniforme02.png", quantidadeEstoque:20 },

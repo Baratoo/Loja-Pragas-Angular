@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: "Open Sans", Helvetica, Arial, "sans-serif";    
+	background: #d3d3d3;
 }
 ol, ul {
 	list-style: none;
@@ -89,3 +90,5 @@ textarea {
 .invalid:focus {
 	border-color: red;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

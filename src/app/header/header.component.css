@@ -7,19 +7,24 @@
     column-gap: 40px;
 }
 
+
 .main-header__title {    
     font-size: 80px;
-    letter-spacing: -1.5px;    
+    letter-spacing: -1.5px;  
 }
+
+
 
 .main-header__title--purple {
     color: var(--purple);
-    font-size:60px;
+    font-size:100px;
+    font-family: 'poppins', sans-serif;
 }
 
 .main-header__title--black {
     color: black;
-    font-size:60px;
+    font-size:100px;
+    font-family: 'poppins', sans-serif;
 }
 
 .main-header__menu ul {
@@ -50,7 +55,7 @@
 }
 
 .badge-carrinho {
-    background-color: #E6E6FA;
+    background-color: var(--purple);
     padding: 5px 10px;    
     border-radius: 4px;
     color: white;
