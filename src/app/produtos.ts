@@ -14,7 +14,7 @@ export interface IProdutoCarrinho extends IProduto{
 export const produtos: IProduto[] = [
     { id: 1, descricao: "Uniforme 01", preco: 100.00, descricaoPreco: "À vista no PIX", imagem: "./assets/Uniforme01.png", quantidadeEstoque: 10 },
     { id: 3, descricao: "Uniforme 02", preco: 200.00, descricaoPreco: "À vista no PIX", imagem: "./assets/Uniforme02.png", quantidadeEstoque:20 },
-    { id: 3, descricao: "Teclado excelente", preco: 749.99, descricaoPreco: "À vista no PIX", imagem: "/assets/teclado-1.jpg", quantidadeEstoque: 10 },
+    /*{ id: 3, descricao: "Teclado excelente", preco: 749.99, descricaoPreco: "À vista no PIX", imagem: "/assets/teclado-1.jpg", quantidadeEstoque: 10 },
     { id: 4, descricao: "Fone para quem joga FPS", preco: 599.99, descricaoPreco: "À vista no PIX", imagem: "/assets/fone-de-ouvido-2.jpg", quantidadeEstoque: 10 },
     { id: 5, descricao: "Fone de ouvido", preco: 299.99, descricaoPreco: "À vista no PIX", imagem: "/assets/fone-de-ouvido-1.jpg", quantidadeEstoque: 10 },
     { id: 6, descricao: "Fone de ouvido bom", preco: 399.99, descricaoPreco: "À vista no PIX", imagem: "/assets/fone-de-ouvido-3.jpg" , quantidadeEstoque: 10},
@@ -26,5 +26,5 @@ export const produtos: IProduto[] = [
     { id: 12, descricao: "Mouse barato", preco: 20, descricaoPreco: "À vista no PIX", imagem: "/assets/mouse-1.png", quantidadeEstoque: 10 },
     { id: 13, descricao: "Mouse ótimo", preco: 200, descricaoPreco: "À vista no PIX", imagem: "/assets/mouse-2.jpg", quantidadeEstoque: 10 },
     { id: 14, descricao: "Mouse pequeno", preco: 50, descricaoPreco: "À vista no PIX", imagem: "/assets/mouse-4.jpg" , quantidadeEstoque: 10},
-    { id: 15, descricao: "Teclado bom", preco: 159.99, descricaoPreco: "À vista no PIX", imagem: "/assets/teclado-2.jpg", quantidadeEstoque: 10 },
+    { id: 15, descricao: "Teclado bom", preco: 159.99, descricaoPreco: "À vista no PIX", imagem: "/assets/teclado-2.jpg", quantidadeEstoque: 10 },*/
 ]
