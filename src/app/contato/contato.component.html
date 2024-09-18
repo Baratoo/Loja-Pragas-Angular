@@ -1,0 +1,77 @@
+<h2 class="contact__title">Entre em contato</h2>
+
+<section class="contact__container">
+    <form class="contact-form" [formGroup]="formContato">
+        <input type="text" placeholder="Digite o seu nome"
+                formControlName="nome"
+                [class.valid]="formContato.controls['nome'].valid"
+                [class.invalid]="formContato.controls['nome'].invalid && formContato.controls['nome'].touched">
+        <div class="error-message" *ngIf="formContato.controls['nome'].invalid && formContato.controls['nome'].touched">
+            <small class="error-message" *ngIf="formContato.controls['nome'].hasError('required')">
+                O campo é obrigatório
+            </small>
+        </div>
+
+
+        <input type="text" placeholder="Digite o assunto"
+            formControlName="assunto"
+            [class.valid]="formContato.controls['assunto'].valid"
+            [class.invalid]="formContato.controls['assunto'].invalid && formContato.controls['assunto'].touched">
+            <div class="error-message" *ngIf="formContato.controls['assunto'].invalid && formContato.controls['assunto'].touched">
+                <small class="error-message" *ngIf="formContato.controls['assunto'].hasError('required')">
+                    O campo é obrigatório
+                </small>
+                <small class="error-message" *ngIf="formContato.controls['assunto'].hasError('minlength')">
+                    O campo precisa no minimo de 10 caracteres
+                </small>
+            </div>
+
+
+        <input type="tel" placeholder="(00) 00000-0000"
+            formControlName="telefone"
+            [class.valid]="formContato.controls['telefone'].valid"
+            [class.invalid]="formContato.controls['telefone'].invalid && formContato.controls['telefone'].touched">
+            <div class="error-message" *ngIf="formContato.controls['telefone'].invalid && formContato.controls['telefone'].touched">
+                <small class="error-message" *ngIf="formContato.controls['telefone'].hasError('required')">
+                    O campo é obrigatório
+                </small>
+                <small class="error-message" *ngIf="formContato.controls['telefone'].hasError('minlength')">
+                    O número é inválido
+                </small>
+            </div>
+
+
+
+        <input type="email" placeholder="Digite seu e-mail"
+            formControlName="email"
+            [class.valid]="formContato.controls['email'].valid"
+            [class.invalid]="formContato.controls['email'].invalid && formContato.controls['email'].touched">
+            <div class="error-message" *ngIf="formContato.controls['email'].invalid && formContato.controls['email'].touched">
+                <small class="error-message" *ngIf="formContato.controls['email'].hasError('required')">
+                    O campo é obrigatório
+                </small>
+                <small class="error-message" *ngIf="formContato.controls['email'].hasError('email')">
+                    O e-mail é inválido
+                </small>
+            </div>
+
+
+        <textarea placeholder="Digite a sua mensagem..."
+            formControlName="mensagem"
+            [class.valid]="formContato.controls['mensagem'].valid"
+            [class.invalid]="formContato.controls['mensagem'].invalid && formContato.controls['mensagem'].touched"></textarea>
+            <div class="error-message" *ngIf="formContato.controls['mensagem'].invalid && formContato.controls['mensagem'].touched">
+                <small class="error-message" *ngIf="formContato.controls['mensagem'].hasError('required')">
+                    O campo é obrigatório
+                </small>
+                <small class="error-message" *ngIf="formContato.controls['mensagem'].hasError('minlength')">
+                    O campo deve conter no mínimo 20 caracteres
+                </small>
+            </div>
+
+        <button [disabled]="formContato.invalid" (click)="enviarFormulario()">Enviar</button>
+    </form>
+    <address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29035.60840871694!2d-52.989274650000006!3d-24.53907055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f26b16ab28ffbf%3A0x356d7cfef7d90966!2sUbirat%C3%A3%2C%20PR%2C%2085440-000!5e0!3m2!1spt-BR!2sbr!4v1726662694197!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </address>
+</section>
